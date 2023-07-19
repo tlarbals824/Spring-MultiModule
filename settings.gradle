@@ -1,4 +1,11 @@
 rootProject.name = 'MultiModule'
-include 'User'
-include 'Post'
 
+
+include 'Domain-Module'
+
+include 'Domain-Module:user'
+include 'Domain-Module:user:user-domain'
+include 'Domain-Module:user:user-application'
+include 'Domain-Module:user:user-presentation'
+
+include 'Api-Module'
