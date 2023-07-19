@@ -1,0 +1,13 @@
+dependencies {
+
+    implementation project(':Domain-Module:user:user-application')
+    implementation project(':Domain-Module:user:user-domain')
+    implementation project(':Domain-Module:user:user-presentation')
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
